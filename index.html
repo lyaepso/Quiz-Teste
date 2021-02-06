@@ -5,46 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+        
+        :root{
+            font-size: 10pt;
+        }
+        
+        header{
+            margin: 20px;
+        }
+
         html,body{
             margin: 0;
             padding: 0;
             height: 100%;
-            
+            font-family: 'Playfair Display', serif;
         }
-        header{
-            margin: 20px;
-            background-color: red;
-        }
+        
         h1{
             background-color: aquamarine;
             margin: 0 auto;
+            padding: 20px;
+            font-size: 3rem;
             text-align: center;
-            padding: 30px;
+            border-radius: 40px;
         }
 
        h2#perguntatitulo{
             background-color: aquamarine;
             margin: 20px;
+            padding: 15px;
+            font-size: 2rem;
             text-align: center;
-            padding: 30px;
+            border-radius: 40px;
         }
         p#pergunta{
             background-color: aquamarine;
             margin: 20px;
+            padding: 30px;
+            font-size: 2rem;
             text-align: center;
-            padding: 100px;
-
+            border-radius: 40px;
         }
-        classe button{
+        
+        ul{
             background-color: aquamarine;
-            margin-left: 20px;
-            text-align: center;
-            padding: 50px 0 50px 0;
-            width: 47.6%;
-            
-
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 2rem;
+            border-radius: 40px;
+            list-style: none;
+            width: 93%; 
         }
-            
+
+        button{
+            background-color: aquamarine;
+            margin: 20px;
+            padding: 10px;
+            font-size: 2rem;
+            text-align: center;
+            border-radius: 40px; 
+            outline: none;
+        }   
     </style>
 </head>
 <body>
@@ -52,11 +74,34 @@
         <h1>Quiz da Eliane</h1>
     </header>
     <h2 id="perguntatitulo">Pergunta 01</h2>
-    <p id="pergunta"> A primeira capital do Brasil foi Salvador!</p>
-    <classe>
-       <button>verdadeiro</button>
-        <button>Falso</button> 
-    </classe>
+    <p id="pergunta">A primeira capital do Brasil foi:</p>
+    <ul>
+        <li>
+            <input type="radio" name="resposta1" id="resposta1" value="0">
+            <label for="">Brasília</label>
+        </li>
+        <li>
+            <input type="radio" name="resposta1" id="resposta1" value="1">
+            <label for="">Salvador</label>
+        </li>
+        <li>
+            <input type="radio" name="resposta1" id="resposta1" value="2">
+            <label for="">Fortaleza</label>
+        </li>
+        <li>
+            <input type="radio" name="resposta1" id="resposta1" value="3">
+            <label for="">Rio de Janeiro</label>
+        </li>
+    </ul>
 
+    <button id="ver">Verificar Resposta</button>
+    <button>Próxima Pergunta</button>
+
+    <script>
+        document.getElementById('ver').onclick = function() {
+            alert("O quiz esta em desenvolvimento")   
+    
+        }
+    </script>
 </body>
 </html>
