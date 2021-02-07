@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+        
+        :root{
+            font-size: 10pt;
+        }
+        
+        header{
+            margin: 20px;
+        }
+
+        html,body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        h1{
+            background-color: aquamarine;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 3rem;
+            text-align: center;
+            border-radius: 40px;
+        }
+
+       h2#perguntatitulo{
+            background-color: aquamarine;
+            margin: 20px;
+            padding: 15px;
+            font-size: 2rem;
+            text-align: center;
+            border-radius: 40px;
+        }
+        p#pergunta{
+            background-color: aquamarine;
+            margin: 20px;
+            padding: 30px;
+            font-size: 2rem;
+            text-align: center;
+            border-radius: 40px;
+        }
+        
+        ul{
+            background-color: aquamarine;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 2rem;
+            border-radius: 40px;
+            list-style: none;
+            width: 93%; 
+        }
+
+        button{
+            background-color: aquamarine;
+            margin: 20px;
+            padding: 10px;
+            font-size: 2rem;
+            text-align: center;
+            border-radius: 40px; 
+            outline: none;
+        }
+
+        p {
+            text-align: center;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz da Eliane</h1>
+    </header>
+    <h2 id="perguntatitulo">Pergunta 02</h2>
+    <p id="pergunta">O primeiro presidente do Brasil eleito pelo voto popular foi:</p>
+    <ul>
+        <li></li>
+            <input type="radio" name="resposta2">
+            <label for="">Getúlio Vargas</label>
+        </li>
+        <li>
+            <input type="radio" name="resposta2">
+            <label for="">Lula</label>
+        </li>
+        <li>
+            <input type="radio" name="resposta2">
+            <label for="">Deodoro da Fonseca</label>
+        </li>
+        <li>
+            <input type="radio" name="resposta2">
+            <label for="">Prudente de Moraes</label>
+        </li>
+    </ul>
+
+   <p>
+        <button id="ver2">Verificar Resposta</button>
+        <button id='next2'>Próxima Pergunta</button>
+
+   </p> 
+    
+    <script>
+        document.getElementById('ver2').onclick = function() {
+            var itens = document.getElementsByName("resposta2")
+    
+            if (itens[0].checked || itens[1].checked || itens[2].checked || itens[3].checked)  {
+                var label = document.querySelectorAll('ul>li')
+                label[3].style.color = ('blue')
+            }
+        }
+    </script>
+</body>
+</html>

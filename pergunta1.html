@@ -66,6 +66,10 @@
             text-align: center;
             border-radius: 40px; 
             outline: none;
+        }
+
+        p {
+            text-align: center;
         }   
     </style>
 </head>
@@ -77,30 +81,40 @@
     <p id="pergunta">A primeira capital do Brasil foi:</p>
     <ul>
         <li>
-            <input type="radio" name="resposta1" id="resposta1" value="0">
+            <input type="radio" name="resposta1">
             <label for="">Brasília</label>
         </li>
         <li>
-            <input type="radio" name="resposta1" id="resposta1" value="1">
+            <input type="radio" name="resposta1">
             <label for="">Salvador</label>
         </li>
         <li>
-            <input type="radio" name="resposta1" id="resposta1" value="2">
+            <input type="radio" name="resposta1">
             <label for="">Fortaleza</label>
         </li>
         <li>
-            <input type="radio" name="resposta1" id="resposta1" value="3">
+            <input type="radio" name="resposta1">
             <label for="">Rio de Janeiro</label>
         </li>
     </ul>
 
-    <button id="ver">Verificar Resposta</button>
-    <button>Próxima Pergunta</button>
+   <p>
+        <button id="ver1">Verificar Resposta</button>
+        <button id='next1'>
+            <a href="pergunta2.html">Próxima Pergunta</a>
+        </button>
+        
 
-    <script>
-        document.getElementById('ver').onclick = function() {
-            alert("O quiz esta em desenvolvimento")   
+   </p> 
     
+    <script>
+        document.getElementById('ver1').onclick = function() {
+            var itens = document.getElementsByName("resposta1")
+    
+            if (itens[0].checked || itens[1].checked || itens[2].checked || itens[3].checked)  {
+                var label = document.querySelectorAll('ul>li')
+                label[1].style.color = ('blue')
+            }
         }
     </script>
 </body>
