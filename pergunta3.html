@@ -77,42 +77,42 @@
     <header>
         <h1>Quiz da Eliane</h1>
     </header>
-    <h2 id="perguntatitulo">Pergunta 02</h2>
-    <p id="pergunta">O primeiro presidente do Brasil eleito pelo voto popular foi:</p>
+    <h2 id="perguntatitulo">Pergunta 03</h2>
+    <p id="pergunta">JALAPÃO é uma cidade brasileira localizada em qual país?</p>
     <ul>
         <li></li>
-            <input type="radio" name="resposta2">
-            <label for="">Getúlio Vargas</label>
+            <input type="radio" name="resposta3">
+            <label for="">Japão</label>
         </li>
         <li>
-            <input type="radio" name="resposta2">
-            <label for="">Lula</label>
+            <input type="radio" name="resposta3">
+            <label for="">China</label>
         </li>
         <li>
-            <input type="radio" name="resposta2">
-            <label for="">Deodoro da Fonseca</label>
+            <input type="radio" name="resposta3">
+            <label for="">Brasil</label>
         </li>
         <li>
-            <input type="radio" name="resposta2">
-            <label for="">Prudente de Moraes</label>
+            <input type="radio" name="resposta3">
+            <label for="">Itália</label>
         </li>
     </ul>
 
    <p>
-        <button id="ver2">Verificar Resposta</button>
-        <button id='next2'>
-            <a href="pergunta3.html">Próxima Pergunta</a>
+        <button id="ver3">Verificar Resposta</button>
+        <button id='next3'>
+            <a href="pergunta4.html">Próxima Pergunta</a>
         </button>
 
    </p> 
     
     <script>
-        document.getElementById('ver2').onclick = function() {
-            var itens = document.getElementsByName("resposta2")
+        document.getElementById('ver3').onclick = function() {
+            var itens = document.getElementsByName("resposta3")
     
             if (itens[0].checked || itens[1].checked || itens[2].checked || itens[3].checked)  {
                 var label = document.querySelectorAll('ul>li')
-                label[3].style.color = ('blue')
+                label[2].style.color = ('blue')
             }
         }
     </script>
