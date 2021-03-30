@@ -40,6 +40,7 @@
             border-radius: 40px;
         }
         p#pergunta{
+            height: 40%;
             background-color: aquamarine;
             margin: 20px;
             padding: 30px;
@@ -77,44 +78,19 @@
     <header>
         <h1>Quiz da Eliane</h1>
     </header>
-    <h2 id="perguntatitulo">Pergunta 04</h2>
-    <p id="pergunta">Qual é o nome oficial do Brasil?</p>
-    <ul>
-        <li>
-            <input type="radio" name="resposta4">
-            <label for="">República Federativa do Brasil</label>
-        </li>
-        <li>
-            <input type="radio" name="resposta4">
-            <label for="">República Democrática do Brasil</label>
-        </li>
-        <li>
-            <input type="radio" name="resposta4">
-            <label for="">República federativa Brasileira</label>
-        </li>
-        <li>
-            <input type="radio" name="resposta4">
-            <label for="">República Democrática Brasileira</label>
-        </li>
-    </ul>
+    <h2 id="perguntatitulo">Fim de Jogo</h2>
+    <p id="pergunta"></p>
+    
 
    <p>
-        <button id="ver4">Verificar Resposta</button>
-        <button id='next4'>
-            <a href="fimQuiz.html">Próxima Pergunta</a>
-        </button>
+        <button id="ver4">Ver Resultado</button>
         
 
    </p> 
     
     <script>
         document.getElementById('ver4').onclick = function() {
-            var itens = document.getElementsByName("resposta4")
-    
-            if (itens[0].checked || itens[1].checked || itens[2].checked || itens[3].checked)  {
-                var label = document.querySelectorAll('ul>li')
-                label[0].style.color = ('blue')
-            }
+            alert('Ainda em Desenvolvimento!')
         }
     </script>
 </body>
